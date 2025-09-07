@@ -1,0 +1,14 @@
+.card{
+    width: 400px;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 30px;
+    background: #7a770f;
+    background: linear-gradient(352deg, rgba(122, 119, 15, 1) 6%, rgba(255, 255, 240, 1) 91%);
+    line-height: 1.5;
+    text-align: justify;
+}
+b{
+    font-size: 1.2rem;
+}

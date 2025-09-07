@@ -1,0 +1,20 @@
+.Product{
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    margin-top:50px;
+    margin-bottom:50px ;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+b{
+    font-size: 1.2rem;
+}
+button{
+    margin: 5px;
+    background-color: aqua;
+    padding: 5px;
+}

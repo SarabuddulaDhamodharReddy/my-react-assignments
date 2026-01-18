@@ -1,22 +1,3 @@
 {
-  "users": [
-    {
-      "id": "a634",
-      "username": "23071A12J2P",
-      "date": "2025-09-19",
-      "email": "248r1a67b9@cmrec.ac.in"
-    },
-    {
-      "id": "265b",
-      "username": "amrixxtha",
-      "date": "2025-09-11",
-      "email": "r52406292@gmail.com"
-    },
-    {
-      "id": "4273",
-      "username": "23071A12J2P",
-      "date": "2025-09-19",
-      "email": "248r1a67b9@cmrec.ac.in"
-    }
-  ]
+  "users": []
 }

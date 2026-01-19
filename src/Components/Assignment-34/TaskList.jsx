@@ -1,8 +1,11 @@
-export default function TaskList({tasks,handleDeleteTask,handleEditTask,handleReadTask}){
-    
+export default function TaskList({setTaskCount,taskCount,tasks,handleDeleteTask,handleEditTask,handleReadTask}){
+    setTaskCount(tasks.length)
     return(
         <div>
-            <p className="text-center mt-3 fw-semibold display-5 text-black">List Of Tasks</p>
+            <div className="row">
+            <p className="col-md-10 text-center mt-3 fw-semibold display-5 text-black">List Of Tasks</p>
+            <button type="button" className="mt-5 col-md-2 btn btn-dark fw-semibold">Count : {taskCount}</button>
+            </div>
             <table className="table text-center">
                 <thead>
                     <tr>

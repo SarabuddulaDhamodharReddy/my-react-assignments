@@ -8,6 +8,7 @@ export default function TaskInfo() {
     let [tasks, setTasks] = useState([])
     let [error, setErrors] = useState('')
     let [show, setShow] = useState(false)
+    let [taskCount,setTaskCount]=useState(0)
     const handleShowOpen = function () {
         setShow(true)
     }
@@ -25,6 +26,7 @@ export default function TaskInfo() {
                 setTasks(tasks => [...tasks, newTask])
                 setErrors('')
                 handleReadTask()
+                setTaskCount(taskCount+1)
             }
             if (res.status === 404) setErrors(res.statusText)
         } catch (error) {
@@ -55,7 +57,10 @@ export default function TaskInfo() {
     const handleDeleteTask = async (id) => {
         let res = await fetch(`http://localhost:3000/tasks/${id}`, { method: "DELETE" })
         let removedTask = await res.json()
-        if (res.status === 200) handleReadTask()
+        if (res.status === 200) {
+            handleReadTask()
+            setTaskCount(taskCount-1)
+        }
     }
     const handleEditTask = (taskObjectToEdit) => {
         handleShowOpen()
@@ -71,7 +76,7 @@ export default function TaskInfo() {
                 {error.length != 0 && <p className="display-5 fw-semibold text-center">{errors}</p>}
                 <CreateTask handleCreateTask={handleCreateTask} />
             </div>
-            <div className="col-md-6"><TaskList handleReadTask={handleReadTask} tasks={tasks} handleDeleteTask={handleDeleteTask} handleEditTask={handleEditTask} /></div>
+            <div className="col-md-6"><TaskList setTaskCount={setTaskCount} taskCount={taskCount} handleReadTask={handleReadTask} tasks={tasks} handleDeleteTask={handleDeleteTask} handleEditTask={handleEditTask} /></div>
             <Modal show={show} onHide={handleShowClose}>
                 <Modal.Header closeButton>
                     <Modal.Title><p className="fw-semibold fs-2 text-info">Form to Edit Task</p></Modal.Title>

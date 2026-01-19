@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "3205",
+      "productName": "Apple Tv",
+      "productPrice": "20000000",
+      "dateOfManufacture": "2026-01-23",
+      "description": "Apple TV is a set-top streaming device that connects to your television via HDMI and turns it into a smart TV.\n\nKey features\n\ntvOS operating system with a smooth, ad-free interface\n\nSupports 4K HDR, Dolby Vision, Dolby Atmos (on Apple TV 4K)\n\nSiri Remote for voice search and control\n\nAccess to apps like Netflix, YouTube, Disney+, Prime Video, Spotify, etc.\n\nSeamless integration with the Apple ecosystem (iPhone, iPad, Mac, AirPods, HomePod)\n\nCan act as a HomeKit hub for smart-home automation\n\nSupports Apple Arcade games\n\n👉 Think of it as a powerful, premium alternative to Android TV boxes or Fire TV."
+    },
+    {
+      "id": "1f8a",
+      "productName": "Samsung TV",
+      "productPrice": "700000",
+      "description": "Samsung TV refers to the range of smart televisions manufactured by Samsung, one of the world’s largest consumer-electronics brands. Samsung TVs are known for display innovation, smart features, and strong hardware quality.",
+      "dateOfManufacture": "2026-01-23"
+    },
+    {
+      "id": "4cc0",
+      "productName": "IPhone",
+      "productPrice": "60000",
+      "description": "iPhone is a premium smartphone line designed and developed by Apple. It is known for its smooth performance, long software support, strong security, and deep ecosystem integration.",
+      "dateOfManufacture": "2026-01-22"
+    },
+    {
+      "id": "6ffa",
+      "productName": "Watch",
+      "productPrice": "60000",
+      "description": "Rolex watches are luxury Swiss mechanical timepieces manufactured by Rolex. Rolex is globally known for precision, durability, craftsmanship, and status value rather than flashy trends.",
+      "dateOfManufacture": "2026-01-15"
+    }
+  ]
+}
